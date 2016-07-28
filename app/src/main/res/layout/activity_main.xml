@@ -19,5 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:src="@android:drawable/ic_menu_mylocation" />
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:visibility="gone"/>
 </FrameLayout>
