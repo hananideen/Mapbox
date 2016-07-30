@@ -12,6 +12,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mapbox.mapboxsdk.MapboxAccountManager;
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         View marker = ((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.custom_marker_layout, null);
         TextView number = (TextView) marker.findViewById(R.id.tv_plate);
         number.setText(plate);
-        CircleImageView profile = (CircleImageView) marker.findViewById(R.id.iv_profile);
+        ImageView profile = (ImageView ) marker.findViewById(R.id.iv_profile);
         profile.setImageBitmap(Utils.setBitmap(picture, this));
 
         IconFactory iconFactory = IconFactory.getInstance(MainActivity.this);
